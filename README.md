@@ -1,83 +1,188 @@
-# BookFlow – Ticket Booking App
+# 🎟️ BookFlow – Ticket Booking Platform
 
-A full-stack ticket booking app where you can book **movies**, **hotels**, and **travel** (flights, trains, buses) in one place, with login and payment receipt generation.
+---
 
-## Features
+## 📖 Overview
 
-- **Login & Register** – Create an account or sign in to book and view receipts.
-- **Movies** – Browse movies, pick a showtime, choose number of tickets, confirm and pay.
-- **Hotels** – Choose a hotel, set number of nights, confirm and pay.
-- **Travel** – Book flights, trains, or buses; confirm and pay.
-- **My Bookings** – List of all your bookings with links to receipts.
-- **Receipt** – After each booking you get a receipt with Booking ID, Payment ID, and details. Use **Print / Save PDF** to print or save as PDF.
+**BookFlow** is a full-stack ticket booking application that allows users to book **movies**, **hotels**, and **travel services** (flights, trains, buses) from a single interface.
 
-## Tech Stack
+It includes secure authentication, booking management, and receipt generation with printable PDF support.
 
-- **Frontend:** React 18, Vite, React Router, CSS Modules
-- **Backend:** Node.js, Express, JWT auth, in-memory store (replace with a DB in production)
+---
 
-## Quick Start
+## ✨ Features
 
-### 1. Install dependencies
+### 🔐 Authentication
+
+* User registration and login
+* JWT-based authentication
+* Persistent session handling
+
+### 🎬 Movies Booking
+
+* Browse available movies
+* Select showtime and ticket count
+* Confirm booking with receipt generation
+
+### 🏨 Hotel Booking
+
+* Choose hotels and number of nights
+* Instant booking confirmation
+
+### ✈️ Travel Booking
+
+* Book flights, trains, and buses
+* Unified booking workflow
+
+### 📄 Booking Management
+
+* View all bookings in **My Bookings**
+* Access detailed receipts anytime
+
+### 🧾 Receipt System
+
+* Auto-generated receipt with:
+
+  * Booking ID
+  * Payment ID
+  * Booking details
+* Export as **PDF via browser print**
+
+---
+
+## 🛠️ Tech Stack
+
+| Layer    | Technology                   |
+| -------- | ---------------------------- |
+| Frontend | React 18, Vite, React Router |
+| Styling  | CSS Modules                  |
+| Backend  | Node.js, Express             |
+| Auth     | JWT                          |
+| Storage  | In-memory (for development)  |
+
+---
+
+## 📁 Project Structure
 
 ```bash
-# Backend
-cd "E:\web project\backend"
-npm install
-
-# Frontend
-cd "E:\web project\frontend"
-npm install
-```
-
-### 2. Run the app
-
-**Terminal 1 – backend (port 3001):**
-```bash
-cd "E:\web project\backend"
-npm run dev
-```
-
-**Terminal 2 – frontend (port 5173):**
-```bash
-cd "E:\web project\frontend"
-npm run dev
-```
-
-Open **http://localhost:5173** in your browser.
-
-### 3. Demo login
-
-- **Email:** `demo@bookflow.com`  
-- **Password:** `demo123`  
-
-Or register a new account from the login page.
-
-## Project Structure
-
-```
-web project/
+web-project/
+│
 ├── backend/
-│   ├── server.js       # Express API: auth, catalog, bookings, receipt
+│   ├── server.js            # Express API (auth, bookings, catalog)
 │   └── package.json
+│
 ├── frontend/
 │   ├── src/
-│   │   ├── components/  # Layout, nav
-│   │   ├── context/     # AuthContext
-│   │   ├── pages/      # Login, Register, Home, Movies, Hotels, Travel, MyBookings, Receipt
+│   │   ├── components/      # UI components
+│   │   ├── context/         # Auth context
+│   │   ├── pages/           # App pages
 │   │   ├── App.jsx
 │   │   ├── main.jsx
 │   │   └── index.css
+│   │
 │   ├── index.html
 │   └── package.json
+│
 └── README.md
 ```
 
-## Receipt & PDF
+---
 
-After completing a booking you are redirected to the receipt page. Click **Print / Save PDF** to open the browser print dialog; choose "Save as PDF" (or your system's equivalent) to download a PDF receipt.
+## ⚙️ Getting Started
 
-## Notes
+### 🔹 Install Dependencies
 
-- Data is stored in memory; restarting the backend clears users (except the demo user in code) and bookings.
-- For production, add a real database and replace `JWT_SECRET` with a secure secret.
+```bash
+# Backend
+cd backend
+npm install
+
+# Frontend
+cd ../frontend
+npm install
+```
+
+---
+
+### ▶️ Run the Application
+
+**Backend (Port 3001)**
+
+```bash
+cd backend
+npm run dev
+```
+
+**Frontend (Port 5173)**
+
+```bash
+cd frontend
+npm run dev
+```
+
+---
+
+### 🌐 Access the App
+
+```
+http://localhost:5173
+```
+
+---
+
+## 🔑 Demo Credentials
+
+* **Email:** [demo@bookflow.com](mailto:demo@bookflow.com)
+* **Password:** demo123
+
+Or create a new account from the registration page.
+
+---
+
+## 🧾 Receipt & PDF Export
+
+After completing a booking:
+
+1. You’ll be redirected to the receipt page
+2. Click **Print / Save PDF**
+3. Choose **Save as PDF** to download
+
+---
+
+## ⚠️ Notes
+
+* Data is stored **in-memory** → resets on server restart
+* Replace with a database (MongoDB/MySQL) for production
+* Update `JWT_SECRET` before deploying
+
+---
+
+## 🚀 Future Improvements
+
+* 💾 Database integration (MongoDB / PostgreSQL)
+* 💳 Payment gateway integration
+* 🔔 Email/SMS notifications
+* 📱 Mobile responsive UI enhancements
+* ☁️ Cloud deployment
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome.
+Feel free to fork the repository and submit a pull request.
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+---
+
+## 👨‍💻 Author
+
+**YOUR NAME**
+🔗 https://github.com/ssreeshanth
+
+---
