@@ -1,0 +1,801 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "email": "demo@bookflow.com",
+      "password": "demo123",
+      "name": "Demo User",
+      "isAdmin": false,
+      "role": "user"
+    },
+    {
+      "id": "admin",
+      "email": "admin@bookflow.com",
+      "password": "admin123",
+      "name": "Administrator",
+      "isAdmin": true,
+      "role": "admin"
+    },
+    {
+      "id": "3",
+      "email": "a@gmail.com",
+      "password": "123456789",
+      "name": "a",
+      "role": "user",
+      "isAdmin": false
+    },
+    {
+      "id": "5",
+      "email": "t1775786333621@x.com",
+      "password": "pass12345",
+      "name": "T",
+      "role": "user",
+      "isAdmin": false
+    }
+  ],
+  "bookings": [
+    {
+      "id": "BKG-1001",
+      "userId": "1",
+      "type": "Movie",
+      "details": {
+        "movieId": "m1"
+      },
+      "totalAmount": 123,
+      "createdAt": "2026-04-09T15:19:18.694Z",
+      "paymentId": "PAY-EB01074B",
+      "status": "cancelled",
+      "cancelledAt": "2026-04-09T17:27:12.993Z",
+      "cancellation": {
+        "by": "admin",
+        "serviceDate": null,
+        "hoursLeft": null,
+        "refundPercentage": 0.8,
+        "refundAmount": 98.4,
+        "status": "processed"
+      }
+    },
+    {
+      "id": "BKG-1002",
+      "userId": "3",
+      "type": "travel",
+      "details": {
+        "type": "Flight",
+        "from": "Mumbai (BOM)",
+        "to": "London (LHR)",
+        "date": "2026-04-21",
+        "carrier": "AirBridge",
+        "baseFare": 649,
+        "travelBaseMultiplier": 1,
+        "weekendMultiplier": 1.2,
+        "weekendApplied": false,
+        "flightCategory": "international",
+        "departureLocalTime": "02:10 AM",
+        "arrivalLocalTime": "07:45 AM",
+        "departureTimezone": "IST (UTC+5:30)",
+        "arrivalTimezone": "BST (UTC+1)",
+        "passenger": {
+          "fullName": "asdf",
+          "age": "5",
+          "phone": "6868686868",
+          "foodType": "Veg",
+          "foodChoice": "Paneer Curry"
+        },
+        "children": [],
+        "seats": [
+          "R5-D",
+          "R4-E",
+          "R9-E"
+        ],
+        "seatBreakdown": [
+          {
+            "seat": "R5-D",
+            "category": "front",
+            "fare": 746.35
+          },
+          {
+            "seat": "R4-E",
+            "category": "front",
+            "fare": 746.35
+          },
+          {
+            "seat": "R9-E",
+            "category": "middle",
+            "fare": 649
+          }
+        ],
+        "foodType": "Veg",
+        "foodChoice": "Paneer Curry"
+      },
+      "totalAmount": 843.7,
+      "status": "confirmed",
+      "cancellation": null,
+      "createdAt": "2026-04-09T18:16:05.188Z",
+      "paymentId": "PAY-E27200D5"
+    },
+    {
+      "id": "BKG-1007",
+      "userId": "5",
+      "type": "movie",
+      "details": {
+        "movieId": "m1"
+      },
+      "totalAmount": 100,
+      "status": "cancelled",
+      "cancellation": {
+        "by": "user",
+        "serviceDate": null,
+        "hoursLeft": null,
+        "refundPercentage": 0.8,
+        "refundAmount": 80,
+        "status": "processed"
+      },
+      "createdAt": "2026-04-10T01:58:53.718Z",
+      "paymentId": "PAY-46C3F16D",
+      "cancelledAt": "2026-04-10T01:58:53.725Z"
+    }
+  ],
+  "bookingIdCounter": 1007,
+  "defaultMovies": [
+    {
+      "id": "m1",
+      "title": "3 Idiots",
+      "genre": "Comedy · Drama",
+      "duration": "2h 52m",
+      "rating": "U/A",
+      "price": 249,
+      "image": "https://upload.wikimedia.org/wikipedia/en/d/df/3_idiots_poster.jpg",
+      "availableDates": [
+        "2026-04-10",
+        "2026-04-11",
+        "2026-04-12",
+        "2026-04-13",
+        "2026-04-14",
+        "2026-04-15"
+      ],
+      "showtimesByDate": {
+        "2026-04-10": [
+          "10:15 AM",
+          "2:00 PM",
+          "6:30 PM"
+        ],
+        "2026-04-11": [
+          "11:00 AM",
+          "3:15 PM",
+          "7:45 PM"
+        ],
+        "2026-04-12": [
+          "9:45 AM",
+          "1:30 PM",
+          "9:00 PM"
+        ],
+        "2026-04-13": [
+          "10:30 AM",
+          "4:00 PM",
+          "8:15 PM"
+        ],
+        "2026-04-14": [
+          "12:00 PM",
+          "5:30 PM",
+          "9:30 PM"
+        ],
+        "2026-04-15": [
+          "11:30 AM",
+          "2:45 PM",
+          "7:00 PM"
+        ]
+      },
+      "available": true,
+      "unavailableReason": ""
+    },
+    {
+      "id": "m2",
+      "title": "Dangal",
+      "genre": "Sports · Biography",
+      "duration": "2h 41m",
+      "rating": "U",
+      "price": 279,
+      "image": "https://upload.wikimedia.org/wikipedia/en/9/99/Dangal_Poster.jpg",
+      "availableDates": [
+        "2026-04-10",
+        "2026-04-11",
+        "2026-04-12",
+        "2026-04-13",
+        "2026-04-14",
+        "2026-04-15"
+      ],
+      "showtimesByDate": {
+        "2026-04-10": [
+          "10:15 AM",
+          "2:00 PM",
+          "6:30 PM"
+        ],
+        "2026-04-11": [
+          "11:00 AM",
+          "3:15 PM",
+          "7:45 PM"
+        ],
+        "2026-04-12": [
+          "9:45 AM",
+          "1:30 PM",
+          "9:00 PM"
+        ],
+        "2026-04-13": [
+          "10:30 AM",
+          "4:00 PM",
+          "8:15 PM"
+        ],
+        "2026-04-14": [
+          "12:00 PM",
+          "5:30 PM",
+          "9:30 PM"
+        ],
+        "2026-04-15": [
+          "11:30 AM",
+          "2:45 PM",
+          "7:00 PM"
+        ]
+      },
+      "available": true,
+      "unavailableReason": ""
+    },
+    {
+      "id": "m3",
+      "title": "RRR",
+      "genre": "Epic · Action",
+      "duration": "3h 02m",
+      "rating": "U/A",
+      "price": 329,
+      "image": "https://upload.wikimedia.org/wikipedia/en/d/d7/RRR_Poster.jpg",
+      "availableDates": [
+        "2026-04-10",
+        "2026-04-11",
+        "2026-04-12",
+        "2026-04-13",
+        "2026-04-14",
+        "2026-04-15"
+      ],
+      "showtimesByDate": {
+        "2026-04-10": [
+          "10:15 AM",
+          "2:00 PM",
+          "6:30 PM"
+        ],
+        "2026-04-11": [
+          "11:00 AM",
+          "3:15 PM",
+          "7:45 PM"
+        ],
+        "2026-04-12": [
+          "9:45 AM",
+          "1:30 PM",
+          "9:00 PM"
+        ],
+        "2026-04-13": [
+          "10:30 AM",
+          "4:00 PM",
+          "8:15 PM"
+        ],
+        "2026-04-14": [
+          "12:00 PM",
+          "5:30 PM",
+          "9:30 PM"
+        ],
+        "2026-04-15": [
+          "11:30 AM",
+          "2:45 PM",
+          "7:00 PM"
+        ]
+      },
+      "available": true,
+      "unavailableReason": ""
+    },
+    {
+      "id": "m4",
+      "title": "Baahubali: The Beginning",
+      "genre": "Epic · Fantasy",
+      "duration": "2h 39m",
+      "rating": "U/A",
+      "price": 299,
+      "image": "https://upload.wikimedia.org/wikipedia/en/5/5f/Baahubali_The_Beginning_poster.jpg",
+      "availableDates": [
+        "2026-04-10",
+        "2026-04-11",
+        "2026-04-12",
+        "2026-04-13",
+        "2026-04-14",
+        "2026-04-15"
+      ],
+      "showtimesByDate": {
+        "2026-04-10": [
+          "10:15 AM",
+          "2:00 PM",
+          "6:30 PM"
+        ],
+        "2026-04-11": [
+          "11:00 AM",
+          "3:15 PM",
+          "7:45 PM"
+        ],
+        "2026-04-12": [
+          "9:45 AM",
+          "1:30 PM",
+          "9:00 PM"
+        ],
+        "2026-04-13": [
+          "10:30 AM",
+          "4:00 PM",
+          "8:15 PM"
+        ],
+        "2026-04-14": [
+          "12:00 PM",
+          "5:30 PM",
+          "9:30 PM"
+        ],
+        "2026-04-15": [
+          "11:30 AM",
+          "2:45 PM",
+          "7:00 PM"
+        ]
+      },
+      "available": true,
+      "unavailableReason": ""
+    },
+    {
+      "id": "m5",
+      "title": "Drishyam",
+      "genre": "Crime · Thriller",
+      "duration": "2h 43m",
+      "rating": "U/A",
+      "price": 229,
+      "image": "https://upload.wikimedia.org/wikipedia/en/8/8a/Drishyam_2015_film.jpg",
+      "availableDates": [
+        "2026-04-10",
+        "2026-04-11",
+        "2026-04-12",
+        "2026-04-13",
+        "2026-04-14",
+        "2026-04-15"
+      ],
+      "showtimesByDate": {
+        "2026-04-10": [
+          "10:15 AM",
+          "2:00 PM",
+          "6:30 PM"
+        ],
+        "2026-04-11": [
+          "11:00 AM",
+          "3:15 PM",
+          "7:45 PM"
+        ],
+        "2026-04-12": [
+          "9:45 AM",
+          "1:30 PM",
+          "9:00 PM"
+        ],
+        "2026-04-13": [
+          "10:30 AM",
+          "4:00 PM",
+          "8:15 PM"
+        ],
+        "2026-04-14": [
+          "12:00 PM",
+          "5:30 PM",
+          "9:30 PM"
+        ],
+        "2026-04-15": [
+          "11:30 AM",
+          "2:45 PM",
+          "7:00 PM"
+        ]
+      },
+      "available": true,
+      "unavailableReason": ""
+    },
+    {
+      "id": "m6",
+      "title": "Gully Boy",
+      "genre": "Musical · Drama",
+      "duration": "2h 34m",
+      "rating": "U/A",
+      "price": 219,
+      "image": "https://upload.wikimedia.org/wikipedia/en/0/07/Gully_Boy_poster.jpg",
+      "availableDates": [
+        "2026-04-10",
+        "2026-04-11",
+        "2026-04-12",
+        "2026-04-13",
+        "2026-04-14",
+        "2026-04-15"
+      ],
+      "showtimesByDate": {
+        "2026-04-10": [
+          "10:15 AM",
+          "2:00 PM",
+          "6:30 PM"
+        ],
+        "2026-04-11": [
+          "11:00 AM",
+          "3:15 PM",
+          "7:45 PM"
+        ],
+        "2026-04-12": [
+          "9:45 AM",
+          "1:30 PM",
+          "9:00 PM"
+        ],
+        "2026-04-13": [
+          "10:30 AM",
+          "4:00 PM",
+          "8:15 PM"
+        ],
+        "2026-04-14": [
+          "12:00 PM",
+          "5:30 PM",
+          "9:30 PM"
+        ],
+        "2026-04-15": [
+          "11:30 AM",
+          "2:45 PM",
+          "7:00 PM"
+        ]
+      },
+      "available": true,
+      "unavailableReason": ""
+    },
+    {
+      "id": "m7",
+      "title": "Dilwale Dulhania Le Jayenge",
+      "genre": "Romance · Musical",
+      "duration": "3h 09m",
+      "rating": "U",
+      "price": 199,
+      "image": "https://upload.wikimedia.org/wikipedia/en/8/80/Dilwale_Dulhania_Le_Jayenge_poster.jpg",
+      "availableDates": [
+        "2026-04-10",
+        "2026-04-11",
+        "2026-04-12",
+        "2026-04-13",
+        "2026-04-14",
+        "2026-04-15"
+      ],
+      "showtimesByDate": {
+        "2026-04-10": [
+          "10:15 AM",
+          "2:00 PM",
+          "6:30 PM"
+        ],
+        "2026-04-11": [
+          "11:00 AM",
+          "3:15 PM",
+          "7:45 PM"
+        ],
+        "2026-04-12": [
+          "9:45 AM",
+          "1:30 PM",
+          "9:00 PM"
+        ],
+        "2026-04-13": [
+          "10:30 AM",
+          "4:00 PM",
+          "8:15 PM"
+        ],
+        "2026-04-14": [
+          "12:00 PM",
+          "5:30 PM",
+          "9:30 PM"
+        ],
+        "2026-04-15": [
+          "11:30 AM",
+          "2:45 PM",
+          "7:00 PM"
+        ]
+      },
+      "available": true,
+      "unavailableReason": ""
+    },
+    {
+      "id": "m8",
+      "title": "Kantara",
+      "genre": "Action · Thriller",
+      "duration": "2h 28m",
+      "rating": "U/A",
+      "price": 259,
+      "image": "https://upload.wikimedia.org/wikipedia/en/8/84/Kantara_poster.jpeg",
+      "availableDates": [
+        "2026-04-10",
+        "2026-04-11",
+        "2026-04-12",
+        "2026-04-13",
+        "2026-04-14",
+        "2026-04-15"
+      ],
+      "showtimesByDate": {
+        "2026-04-10": [
+          "10:15 AM",
+          "2:00 PM",
+          "6:30 PM"
+        ],
+        "2026-04-11": [
+          "11:00 AM",
+          "3:15 PM",
+          "7:45 PM"
+        ],
+        "2026-04-12": [
+          "9:45 AM",
+          "1:30 PM",
+          "9:00 PM"
+        ],
+        "2026-04-13": [
+          "10:30 AM",
+          "4:00 PM",
+          "8:15 PM"
+        ],
+        "2026-04-14": [
+          "12:00 PM",
+          "5:30 PM",
+          "9:30 PM"
+        ],
+        "2026-04-15": [
+          "11:30 AM",
+          "2:45 PM",
+          "7:00 PM"
+        ]
+      },
+      "available": true,
+      "unavailableReason": ""
+    },
+    {
+      "id": "m9",
+      "title": "Jawan",
+      "genre": "Action · Thriller",
+      "duration": "2h 49m",
+      "rating": "U/A",
+      "price": 319,
+      "image": "https://upload.wikimedia.org/wikipedia/en/3/39/Jawan_film_poster.jpg",
+      "availableDates": [
+        "2026-04-10",
+        "2026-04-11",
+        "2026-04-12",
+        "2026-04-13",
+        "2026-04-14",
+        "2026-04-15"
+      ],
+      "showtimesByDate": {
+        "2026-04-10": [
+          "10:15 AM",
+          "2:00 PM",
+          "6:30 PM"
+        ],
+        "2026-04-11": [
+          "11:00 AM",
+          "3:15 PM",
+          "7:45 PM"
+        ],
+        "2026-04-12": [
+          "9:45 AM",
+          "1:30 PM",
+          "9:00 PM"
+        ],
+        "2026-04-13": [
+          "10:30 AM",
+          "4:00 PM",
+          "8:15 PM"
+        ],
+        "2026-04-14": [
+          "12:00 PM",
+          "5:30 PM",
+          "9:30 PM"
+        ],
+        "2026-04-15": [
+          "11:30 AM",
+          "2:45 PM",
+          "7:00 PM"
+        ]
+      },
+      "available": true,
+      "unavailableReason": ""
+    },
+    {
+      "id": "m10",
+      "title": "Queen",
+      "genre": "Comedy · Drama",
+      "duration": "2h 26m",
+      "rating": "U/A",
+      "price": 209,
+      "image": "https://upload.wikimedia.org/wikipedia/en/4/45/QueenMoviePoster7thMarch.jpg",
+      "availableDates": [
+        "2026-04-10",
+        "2026-04-11",
+        "2026-04-12",
+        "2026-04-13",
+        "2026-04-14",
+        "2026-04-15"
+      ],
+      "showtimesByDate": {
+        "2026-04-10": [
+          "10:15 AM",
+          "2:00 PM",
+          "6:30 PM"
+        ],
+        "2026-04-11": [
+          "11:00 AM",
+          "3:15 PM",
+          "7:45 PM"
+        ],
+        "2026-04-12": [
+          "9:45 AM",
+          "1:30 PM",
+          "9:00 PM"
+        ],
+        "2026-04-13": [
+          "10:30 AM",
+          "4:00 PM",
+          "8:15 PM"
+        ],
+        "2026-04-14": [
+          "12:00 PM",
+          "5:30 PM",
+          "9:30 PM"
+        ],
+        "2026-04-15": [
+          "11:30 AM",
+          "2:45 PM",
+          "7:00 PM"
+        ]
+      },
+      "available": true,
+      "unavailableReason": ""
+    }
+  ],
+  "defaultHotels": [
+    {
+      "id": "h1",
+      "name": "Grand Plaza Hotel",
+      "city": "New York",
+      "stars": 5,
+      "pricePerNight": 189,
+      "amenities": [
+        "Pool",
+        "Spa",
+        "Restaurant"
+      ],
+      "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80"
+    },
+    {
+      "id": "h2",
+      "name": "Coastal Inn",
+      "city": "Miami",
+      "stars": 4,
+      "pricePerNight": 129,
+      "amenities": [
+        "Beach",
+        "Breakfast"
+      ],
+      "image": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1200&q=80",
+      "available": false,
+      "unavailableReason": ""
+    },
+    {
+      "id": "h3",
+      "name": "Mountain Lodge",
+      "city": "Denver",
+      "stars": 4,
+      "pricePerNight": 149,
+      "amenities": [
+        "Ski",
+        "Fireplace"
+      ],
+      "image": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1200&q=80"
+    }
+  ],
+  "defaultTravels": [
+    {
+      "id": "t1",
+      "type": "Flight",
+      "flightCategory": "domestic",
+      "from": "New York (JFK)",
+      "to": "Los Angeles (LAX)",
+      "date": "2026-04-12",
+      "price": 299,
+      "carrier": "SkyWays",
+      "departureLocalTime": "09:20 AM",
+      "arrivalLocalTime": "12:35 PM",
+      "departureTimezone": "EDT (UTC-4)",
+      "arrivalTimezone": "PDT (UTC-7)"
+    },
+    {
+      "id": "t4",
+      "type": "Flight",
+      "flightCategory": "international",
+      "from": "Mumbai (BOM)",
+      "to": "London (LHR)",
+      "date": "2026-04-21",
+      "price": 649,
+      "carrier": "AirBridge",
+      "departureLocalTime": "02:10 AM",
+      "arrivalLocalTime": "07:45 AM",
+      "departureTimezone": "IST (UTC+5:30)",
+      "arrivalTimezone": "BST (UTC+1)",
+      "available": true,
+      "unavailableReason": ""
+    },
+    {
+      "id": "t2",
+      "type": "Train",
+      "from": "Boston",
+      "to": "Washington DC",
+      "date": "2025-03-20",
+      "price": 89,
+      "carrier": "Amtrak"
+    },
+    {
+      "id": "t3",
+      "type": "Bus",
+      "from": "Chicago",
+      "to": "Detroit",
+      "date": "2025-03-18",
+      "price": 45,
+      "carrier": "Greyhound"
+    }
+  ],
+  "adminMovies": [
+    {
+      "id": "m-admin-1",
+      "title": "Kanchana",
+      "genre": "Horror",
+      "duration": "2h 40m",
+      "rating": "PG-13",
+      "showtimes": [
+        "10:00 AM",
+        "2:00 PM",
+        "6:00 PM"
+      ],
+      "price": 20,
+      "available": true,
+      "unavailableReason": ""
+    }
+  ],
+  "adminHotels": [],
+  "adminTravels": [],
+  "adminMovieId": 2,
+  "adminHotelId": 1,
+  "adminTravelId": 1,
+  "pricingSettings": {
+    "weekendMultiplier": 1.2,
+    "infantDiscountMultiplier": 0.5,
+    "movieBaseMultiplier": 1,
+    "hotelBaseMultiplier": 1,
+    "travelBaseMultiplier": 1,
+    "refundPolicy": {
+      "fullRefundHours": 72,
+      "halfRefundHours": 24,
+      "partialRefundHours": 2,
+      "halfRefundRate": 0.5,
+      "partialRefundRate": 0.25,
+      "noDateRefundRate": 0.8
+    }
+  },
+  "hotelReviews": {
+    "h1": [
+      {
+        "id": "r1",
+        "userId": "1",
+        "userName": "Demo User",
+        "rating": 5,
+        "comment": "Excellent service and very clean rooms.",
+        "createdAt": "2026-04-09T15:17:18.389Z"
+      }
+    ],
+    "h2": [
+      {
+        "id": "r2",
+        "userId": "1",
+        "userName": "Demo User",
+        "rating": 4,
+        "comment": "Great location near the beach.",
+        "createdAt": "2026-04-09T15:17:18.390Z"
+      }
+    ]
+  }
+}

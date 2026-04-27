@@ -1,0 +1,202 @@
+[
+  {
+    "id": "m1",
+    "title": "3 Idiots",
+    "genre": "Comedy · Drama",
+    "duration": "2h 52m",
+    "rating": "U/A",
+    "price": 249,
+    "image": "https://upload.wikimedia.org/wikipedia/en/d/df/3_idiots_poster.jpg",
+    "availableDates": ["2026-04-10", "2026-04-11", "2026-04-12", "2026-04-13", "2026-04-14", "2026-04-15"],
+    "showtimesByDate": {
+      "2026-04-10": ["10:15 AM", "2:00 PM", "6:30 PM"],
+      "2026-04-11": ["11:00 AM", "3:15 PM", "7:45 PM"],
+      "2026-04-12": ["9:45 AM", "1:30 PM", "9:00 PM"],
+      "2026-04-13": ["10:30 AM", "4:00 PM", "8:15 PM"],
+      "2026-04-14": ["12:00 PM", "5:30 PM", "9:30 PM"],
+      "2026-04-15": ["11:30 AM", "2:45 PM", "7:00 PM"]
+    },
+    "available": true,
+    "unavailableReason": ""
+  },
+  {
+    "id": "m2",
+    "title": "Dangal",
+    "genre": "Sports · Biography",
+    "duration": "2h 41m",
+    "rating": "U",
+    "price": 279,
+    "image": "https://upload.wikimedia.org/wikipedia/en/9/99/Dangal_Poster.jpg",
+    "availableDates": ["2026-04-10", "2026-04-11", "2026-04-12", "2026-04-13", "2026-04-14", "2026-04-15"],
+    "showtimesByDate": {
+      "2026-04-10": ["10:15 AM", "2:00 PM", "6:30 PM"],
+      "2026-04-11": ["11:00 AM", "3:15 PM", "7:45 PM"],
+      "2026-04-12": ["9:45 AM", "1:30 PM", "9:00 PM"],
+      "2026-04-13": ["10:30 AM", "4:00 PM", "8:15 PM"],
+      "2026-04-14": ["12:00 PM", "5:30 PM", "9:30 PM"],
+      "2026-04-15": ["11:30 AM", "2:45 PM", "7:00 PM"]
+    },
+    "available": true,
+    "unavailableReason": ""
+  },
+  {
+    "id": "m3",
+    "title": "RRR",
+    "genre": "Epic · Action",
+    "duration": "3h 02m",
+    "rating": "U/A",
+    "price": 329,
+    "image": "https://upload.wikimedia.org/wikipedia/en/d/d7/RRR_Poster.jpg",
+    "availableDates": ["2026-04-10", "2026-04-11", "2026-04-12", "2026-04-13", "2026-04-14", "2026-04-15"],
+    "showtimesByDate": {
+      "2026-04-10": ["10:15 AM", "2:00 PM", "6:30 PM"],
+      "2026-04-11": ["11:00 AM", "3:15 PM", "7:45 PM"],
+      "2026-04-12": ["9:45 AM", "1:30 PM", "9:00 PM"],
+      "2026-04-13": ["10:30 AM", "4:00 PM", "8:15 PM"],
+      "2026-04-14": ["12:00 PM", "5:30 PM", "9:30 PM"],
+      "2026-04-15": ["11:30 AM", "2:45 PM", "7:00 PM"]
+    },
+    "available": true,
+    "unavailableReason": ""
+  },
+  {
+    "id": "m4",
+    "title": "Baahubali: The Beginning",
+    "genre": "Epic · Fantasy",
+    "duration": "2h 39m",
+    "rating": "U/A",
+    "price": 299,
+    "image": "https://upload.wikimedia.org/wikipedia/en/5/5f/Baahubali_The_Beginning_poster.jpg",
+    "availableDates": ["2026-04-10", "2026-04-11", "2026-04-12", "2026-04-13", "2026-04-14", "2026-04-15"],
+    "showtimesByDate": {
+      "2026-04-10": ["10:15 AM", "2:00 PM", "6:30 PM"],
+      "2026-04-11": ["11:00 AM", "3:15 PM", "7:45 PM"],
+      "2026-04-12": ["9:45 AM", "1:30 PM", "9:00 PM"],
+      "2026-04-13": ["10:30 AM", "4:00 PM", "8:15 PM"],
+      "2026-04-14": ["12:00 PM", "5:30 PM", "9:30 PM"],
+      "2026-04-15": ["11:30 AM", "2:45 PM", "7:00 PM"]
+    },
+    "available": true,
+    "unavailableReason": ""
+  },
+  {
+    "id": "m5",
+    "title": "Drishyam",
+    "genre": "Crime · Thriller",
+    "duration": "2h 43m",
+    "rating": "U/A",
+    "price": 229,
+    "image": "https://upload.wikimedia.org/wikipedia/en/8/8a/Drishyam_2015_film.jpg",
+    "availableDates": ["2026-04-10", "2026-04-11", "2026-04-12", "2026-04-13", "2026-04-14", "2026-04-15"],
+    "showtimesByDate": {
+      "2026-04-10": ["10:15 AM", "2:00 PM", "6:30 PM"],
+      "2026-04-11": ["11:00 AM", "3:15 PM", "7:45 PM"],
+      "2026-04-12": ["9:45 AM", "1:30 PM", "9:00 PM"],
+      "2026-04-13": ["10:30 AM", "4:00 PM", "8:15 PM"],
+      "2026-04-14": ["12:00 PM", "5:30 PM", "9:30 PM"],
+      "2026-04-15": ["11:30 AM", "2:45 PM", "7:00 PM"]
+    },
+    "available": true,
+    "unavailableReason": ""
+  },
+  {
+    "id": "m6",
+    "title": "Gully Boy",
+    "genre": "Musical · Drama",
+    "duration": "2h 34m",
+    "rating": "U/A",
+    "price": 219,
+    "image": "https://upload.wikimedia.org/wikipedia/en/0/07/Gully_Boy_poster.jpg",
+    "availableDates": ["2026-04-10", "2026-04-11", "2026-04-12", "2026-04-13", "2026-04-14", "2026-04-15"],
+    "showtimesByDate": {
+      "2026-04-10": ["10:15 AM", "2:00 PM", "6:30 PM"],
+      "2026-04-11": ["11:00 AM", "3:15 PM", "7:45 PM"],
+      "2026-04-12": ["9:45 AM", "1:30 PM", "9:00 PM"],
+      "2026-04-13": ["10:30 AM", "4:00 PM", "8:15 PM"],
+      "2026-04-14": ["12:00 PM", "5:30 PM", "9:30 PM"],
+      "2026-04-15": ["11:30 AM", "2:45 PM", "7:00 PM"]
+    },
+    "available": true,
+    "unavailableReason": ""
+  },
+  {
+    "id": "m7",
+    "title": "Dilwale Dulhania Le Jayenge",
+    "genre": "Romance · Musical",
+    "duration": "3h 09m",
+    "rating": "U",
+    "price": 199,
+    "image": "https://upload.wikimedia.org/wikipedia/en/8/80/Dilwale_Dulhania_Le_Jayenge_poster.jpg",
+    "availableDates": ["2026-04-10", "2026-04-11", "2026-04-12", "2026-04-13", "2026-04-14", "2026-04-15"],
+    "showtimesByDate": {
+      "2026-04-10": ["10:15 AM", "2:00 PM", "6:30 PM"],
+      "2026-04-11": ["11:00 AM", "3:15 PM", "7:45 PM"],
+      "2026-04-12": ["9:45 AM", "1:30 PM", "9:00 PM"],
+      "2026-04-13": ["10:30 AM", "4:00 PM", "8:15 PM"],
+      "2026-04-14": ["12:00 PM", "5:30 PM", "9:30 PM"],
+      "2026-04-15": ["11:30 AM", "2:45 PM", "7:00 PM"]
+    },
+    "available": true,
+    "unavailableReason": ""
+  },
+  {
+    "id": "m8",
+    "title": "Kantara",
+    "genre": "Action · Thriller",
+    "duration": "2h 28m",
+    "rating": "U/A",
+    "price": 259,
+    "image": "https://upload.wikimedia.org/wikipedia/en/8/84/Kantara_poster.jpeg",
+    "availableDates": ["2026-04-10", "2026-04-11", "2026-04-12", "2026-04-13", "2026-04-14", "2026-04-15"],
+    "showtimesByDate": {
+      "2026-04-10": ["10:15 AM", "2:00 PM", "6:30 PM"],
+      "2026-04-11": ["11:00 AM", "3:15 PM", "7:45 PM"],
+      "2026-04-12": ["9:45 AM", "1:30 PM", "9:00 PM"],
+      "2026-04-13": ["10:30 AM", "4:00 PM", "8:15 PM"],
+      "2026-04-14": ["12:00 PM", "5:30 PM", "9:30 PM"],
+      "2026-04-15": ["11:30 AM", "2:45 PM", "7:00 PM"]
+    },
+    "available": true,
+    "unavailableReason": ""
+  },
+  {
+    "id": "m9",
+    "title": "Jawan",
+    "genre": "Action · Thriller",
+    "duration": "2h 49m",
+    "rating": "U/A",
+    "price": 319,
+    "image": "https://upload.wikimedia.org/wikipedia/en/3/39/Jawan_film_poster.jpg",
+    "availableDates": ["2026-04-10", "2026-04-11", "2026-04-12", "2026-04-13", "2026-04-14", "2026-04-15"],
+    "showtimesByDate": {
+      "2026-04-10": ["10:15 AM", "2:00 PM", "6:30 PM"],
+      "2026-04-11": ["11:00 AM", "3:15 PM", "7:45 PM"],
+      "2026-04-12": ["9:45 AM", "1:30 PM", "9:00 PM"],
+      "2026-04-13": ["10:30 AM", "4:00 PM", "8:15 PM"],
+      "2026-04-14": ["12:00 PM", "5:30 PM", "9:30 PM"],
+      "2026-04-15": ["11:30 AM", "2:45 PM", "7:00 PM"]
+    },
+    "available": true,
+    "unavailableReason": ""
+  },
+  {
+    "id": "m10",
+    "title": "Queen",
+    "genre": "Comedy · Drama",
+    "duration": "2h 26m",
+    "rating": "U/A",
+    "price": 209,
+    "image": "https://upload.wikimedia.org/wikipedia/en/4/45/QueenMoviePoster7thMarch.jpg",
+    "availableDates": ["2026-04-10", "2026-04-11", "2026-04-12", "2026-04-13", "2026-04-14", "2026-04-15"],
+    "showtimesByDate": {
+      "2026-04-10": ["10:15 AM", "2:00 PM", "6:30 PM"],
+      "2026-04-11": ["11:00 AM", "3:15 PM", "7:45 PM"],
+      "2026-04-12": ["9:45 AM", "1:30 PM", "9:00 PM"],
+      "2026-04-13": ["10:30 AM", "4:00 PM", "8:15 PM"],
+      "2026-04-14": ["12:00 PM", "5:30 PM", "9:30 PM"],
+      "2026-04-15": ["11:30 AM", "2:45 PM", "7:00 PM"]
+    },
+    "available": true,
+    "unavailableReason": ""
+  }
+]
